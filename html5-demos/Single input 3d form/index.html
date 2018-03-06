@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Single input 3d form</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <div class="fun-cube"><i class="fa fa-cube"></i></div>
+    <h1>Single input 3d form</h1>
+    <!-- heirarchy: #cuboid > form > div*4(cuboid faces) -->
+    <div id="cuboid">
+      <form>
+        <div>
+          <p class="cuboid-text">Subscribe</p>
+        </div>
+        <div>
+          <label for="submit" class="submit-icon">
+            <i class="fa fa-chevron-right"></i>
+          </label>
+          <input type="text" id="email" class="cuboid-text" placeholder="Your Email"
+                 autocomplete="off" />
+          <input type="submit" id="submit" />
+        </div>
+        <div>
+          <p class="cuboid-text loader">Just a moment</p>
+        </div>
+        <div>
+          <span class="reset-icon"><i class="fa fa-refresh"></i></span>
+          <p class="cuboid-text">Thanks, we'll be in to.</p>
+        </div>
+      </form>
+    </div>
+    <!-- jQuery -->
+    <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.js" type="text/javascript"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
